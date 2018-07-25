@@ -23,6 +23,7 @@
     "bootstrap": "^4.1.2",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
+    "fontawesome": "^4.7.2",
     "jquery": "^3.3.1",
     "rxjs": "^6.0.0",
     "save": "^2.3.2",
