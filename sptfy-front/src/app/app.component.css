@@ -1,0 +1,15 @@
+.gj-background {
+  position: fixed; /*HAS TO BE FIXED, OTHERWISE NOT FULL SCREEN WALLPAPER*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: no-repeat center;
+  background-size: cover;
+  filter: blur(2px);
+  margin: 0;
+
+}
+
+
