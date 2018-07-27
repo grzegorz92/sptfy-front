@@ -7,7 +7,6 @@
 .spotify-button{
   background-color: #1db954;
   color: #ffffff;
-  margin: 10px;
 }
 
 .spotify-button:hover{
@@ -18,7 +17,6 @@
 .spotify-button:active{
   background-color: #1b8241;
   color: #ffffff;
-  margin: 10px;
 }
 
 .spotify-button:focus, .spotify-button.focus {
@@ -28,7 +26,6 @@
 .facebook-button{
   background-color: #3b5998;
   color: #ffffff;
-  margin: 10px;
 }
 
 .facebook-button:hover{
@@ -39,7 +36,6 @@
 .facebook-button:active{
   background-color: #36437d;
   color: #ffffff;
-  margin: 10px;
 }
 
 .facebook-button:focus, .facebook-button.focus {
@@ -53,6 +49,17 @@
 
 .gj-link{
   color: #49D157;
+  text-decoration: none;
+  font-weight: bold;
+}
+.gj-link:hover{
+  color: #3c9d49;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.gj-link:active{
+  color: #2d7237;
   text-decoration: none;
   font-weight: bold;
 }
@@ -91,4 +98,10 @@
 .gj-btn-green:not(:disabled):not(.disabled):active:focus, .gj-btn-green:not(:disabled):not(.disabled).active:focus,
 .show > .gj-btn-green.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(61, 149, 75, 0.0);
+}
+
+.socialmedia-btn-family{
+  text-align: center;
+  margin-left: -0.25rem;
+  margin-right: -0.25rem;
 }

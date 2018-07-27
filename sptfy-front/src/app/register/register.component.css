@@ -8,46 +8,45 @@
 .gj-terms-paragraph{
   font-size: 14px;
   padding-top: 10px;
-  text-align: center
+  text-align: center;
 }
 
-/*.gj-log-logo {*/
-  /*text-align: center;*/
-  /*font-size: 80px;*/
-  /*padding-bottom: 20px;*/
-  /*color: #495057*/
-/*}*/
+.gj-log-logo {
+  text-align: center;
+  font-size: 80px;
+  padding-bottom: 20px;
+  color: #495057
+}
 
-.or-style{
-  margin: 15px;
+.flex-parent {
+  display: flex;
+  /*width: 300px;*/
+  height: 20px;
+  align-items: center;
+  text-align: center !important;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.flex-child-edge {
+  flex-grow: 2;
+  height: 1px;
+  /*background-color: #ababab;*/
+  border: 1px rgba(169, 169, 169, 0.25) solid;
+}
+
+.flex-child-text {
+  color: rgba(23, 23, 23, 0.37);
   text-align: center;
   font-weight: bold;
-  font-size: 18px
+  font-size: 18px;
+  flex-basis: auto;
+  flex-grow: 0;
+  margin: 0px 5px 0px 5px;
 }
 
-.or-line {
-  line-height: 0.1;
-  height: 100%;
-  border: black;
+.icon-offset{
+  position: relative;
+  top: 2px;
+  left: -2px;
 }
-
-.or-line:before {
-  content: "";
-  border: 1px solid #404040;
-  position: absolute;
-  width: 50%;
-  top: 8px;
-  left: -45px;
-}
-
-.or-line:after {
-  content: "";
-  border: 1px solid #404040;
-  width: 50%;
-  position: absolute;
-  top: 8px;
-  right: -45px;
-}
-
-
-
