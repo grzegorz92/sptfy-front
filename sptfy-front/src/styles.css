@@ -4,3 +4,91 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.spotify-button{
+  background-color: #1db954;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.spotify-button:hover{
+  background-color: #1d9e4e;
+  color: #ffffff;
+}
+
+.spotify-button:active{
+  background-color: #1b8241;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.spotify-button:focus, .spotify-button.focus {
+  box-shadow: 0 0 0 0.2rem rgba(73, 171, 81, 0.0);
+}
+
+.facebook-button{
+  background-color: #3b5998;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.facebook-button:hover{
+  background-color: #374b86;
+  color: #ffffff;
+}
+
+.facebook-button:active{
+  background-color: #36437d;
+  color: #ffffff;
+  margin: 10px;
+}
+
+.facebook-button:focus, .facebook-button.focus {
+  box-shadow: 0 0 0 0.2rem rgba(73, 171, 81, 0.0);
+}
+
+.gj-button-logo{
+  font-size: 25px;
+}
+
+
+.gj-link{
+  color: #49D157;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.gj-btn-green {
+  color: #fff;
+  background-color: #49D157;
+  border-color: #49D157;
+  width: 100%;
+}
+
+.gj-btn-green:hover {
+  color: #fff;
+  background-color: #48b256;
+  border-color:  #48b256;
+}
+
+.gj-btn-green:active {
+  color: #fff;
+  background-color: #3d954b;
+  border-color:  #3d954b;
+}
+
+.gj-btn-green:focus, .gj-btn-green.focus {
+  box-shadow: 0 0 0 0.2rem rgba(73, 171, 81, 0.0);
+}
+
+.gj-btn-green:not(:disabled):not(.disabled):active, .gj-btn-green:not(:disabled):not(.disabled).active,
+.show > .gj-btn-green.dropdown-toggle {
+  color: #fff;
+  background-color: #3d954b;
+  border-color: #3d954b;
+}
+
+.gj-btn-green:not(:disabled):not(.disabled):active:focus, .gj-btn-green:not(:disabled):not(.disabled).active:focus,
+.show > .gj-btn-green.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(61, 149, 75, 0.0);
+}

@@ -1,0 +1,53 @@
+.gj-container {
+  padding: 40px 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  margin-top: 100px;
+}
+
+.gj-terms-paragraph{
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center
+}
+
+/*.gj-log-logo {*/
+  /*text-align: center;*/
+  /*font-size: 80px;*/
+  /*padding-bottom: 20px;*/
+  /*color: #495057*/
+/*}*/
+
+.or-style{
+  margin: 15px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px
+}
+
+.or-line {
+  line-height: 0.1;
+  height: 100%;
+  border: black;
+}
+
+.or-line:before {
+  content: "";
+  border: 1px solid #404040;
+  position: absolute;
+  width: 50%;
+  top: 8px;
+  left: -45px;
+}
+
+.or-line:after {
+  content: "";
+  border: 1px solid #404040;
+  width: 50%;
+  position: absolute;
+  top: 8px;
+  right: -45px;
+}
+
+
+
