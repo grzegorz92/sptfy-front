@@ -1,6 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
-.gf-montserrat{
+body {
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -45,7 +45,6 @@
 .gj-button-logo{
   font-size: 25px;
 }
-
 
 .gj-link{
   color: #49D157;
