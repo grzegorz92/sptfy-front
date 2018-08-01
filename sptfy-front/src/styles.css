@@ -104,3 +104,7 @@ body {
   margin-left: -0.25rem;
   margin-right: -0.25rem;
 }
+
+.app-logo{
+  background: url("sound-bars-pulse.svg");
+}

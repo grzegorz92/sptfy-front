@@ -1,0 +1,44 @@
+.gj-background {
+  position: fixed; /*HAS TO BE FIXED, OTHERWISE NOT FULL SCREEN WALLPAPER*/
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: no-repeat center;
+  background-size: cover;
+  /*filter: blur(2px);*/
+  margin: 0;
+}
+
+.gj-animated-bckgrd {
+  background: linear-gradient(125deg, rgba(23, 195, 85, 0.75), rgba(0, 170, 185, 0.76), rgba(148, 0, 168, 0.76), rgba(209, 67, 0, 0.76), #d7d800);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 44s ease infinite;
+  -moz-animation: AnimationName 44s ease infinite;
+  -o-animation: AnimationName 44s ease infinite;
+  animation: AnimationName 44s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+@keyframes AnimationName {
+  0%{background-position:23% 0%}
+  50%{background-position:78% 100%}
+  100%{background-position:23% 0%}
+}
+

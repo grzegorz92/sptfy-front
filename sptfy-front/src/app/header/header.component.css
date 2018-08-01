@@ -2,3 +2,36 @@
   background-color: #495057;
   opacity: 0.95;
 }
+
+.gj-navbar-brand, .gj-navbar-items{
+  color: white;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.gj-navbar-brand:hover, .gj-navbar-items:hover{
+  color: rgb(209, 116, 135);
+}
+
+.gj-navbar-brand:active, .gj-navbar-items:active{
+  color: rgb(182, 94, 113);
+}
+
+.toggler-btn{
+  color: white;
+  font-size: 25px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+}
+
+.toggler-btn:hover{
+  color: rgb(209, 116, 135);
+}
+
+.toggler-btn:active{
+  color: rgb(182, 94, 113);
+}
+
+.toggler-btn:focus{
+  outline: none;
+}

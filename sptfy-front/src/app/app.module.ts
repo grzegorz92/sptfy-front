@@ -3,12 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { LoginComponent } from './login/login.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './not-authorized/login/login.component';
+import { WelcomeComponent } from './not-authorized/welcome/welcome.component';
+import { RegisterComponent } from './not-authorized/register/register.component';
 import { IndexMenuComponent } from './index-menu/index-menu.component';
 import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
+import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
 
 const appRoutes: Routes = [
   {path: '', component: IndexMenuComponent},
@@ -24,7 +25,8 @@ const appRoutes: Routes = [
     LoginComponent,
     WelcomeComponent,
     RegisterComponent,
-    IndexMenuComponent
+    IndexMenuComponent,
+    NotAuthorizedComponent
   ],
   imports: [
     BrowserModule,
