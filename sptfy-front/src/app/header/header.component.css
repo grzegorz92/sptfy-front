@@ -1,20 +1,12 @@
 .gj-navbar{
-  background-color: #495057;
-  opacity: 0.95;
+  /*background-color: rgba(73, 80, 87, 0.65);*/
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .gj-navbar-brand, .gj-navbar-items{
   color: white;
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
-}
-
-.gj-navbar-brand:hover, .gj-navbar-items:hover{
-  color: rgb(209, 116, 135);
-}
-
-.gj-navbar-brand:active, .gj-navbar-items:active{
-  color: rgb(182, 94, 113);
 }
 
 .toggler-btn{
@@ -24,14 +16,50 @@
   transition-duration: 0.4s;
 }
 
-.toggler-btn:hover{
-  color: rgb(209, 116, 135);
+.toggler-btn-dark{
+  color: rgb(54, 61, 68);
+  font-size: 25px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 }
 
-.toggler-btn:active{
-  color: rgb(182, 94, 113);
+/*.gj-navbar-brand:hover, */
+.gj-navbar-items:hover{
+  /*color: rgb(209, 116, 135);   pink */
+  color: rgb(65, 72, 79);
 }
 
-.toggler-btn:focus{
+/*.gj-navbar-brand:active, */
+.gj-navbar-items:active,
+.toggler-btn:active
+/*.toggler-btn:hover*/
+{
+  /*color: rgb(182, 94, 113);    pink */
+  color: rgb(54, 61, 68);
+}
+
+.toggler-btn:focus,
+.toggler-btn-dark:focus{
   outline: none;
 }
+
+/*for md*/
+.brand-logo{
+  width: 30px;
+  font-size: 21px;
+}
+
+/*Disable hover in toggler button on touch-screen devices // Enable only on non-touch screen*/
+@media (hover: hover) {
+  .toggler-btn:hover { color: rgb(54, 61, 68); }
+}
+
+
+/*for lg*/
+/*@media screen and (min-width: 768px){*/
+  /*.brand-logo{*/
+    /*width: 40px;*/
+    /*font-size: 28px;*/
+  /*}*/
+/*}*/
+

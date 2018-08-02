@@ -1,12 +1,14 @@
 <nav class="gj-navbar navbar navbar-expand-md gf-bitter">
   <a class="navbar-brand gj-navbar-brand" href="#">
     <!--<i style="font-size: 25px" class="fa fa-spotify"></i>-->
-    <!--<span class=""-->
 
-    <span style="font-size: 15px">biedify</span>
+    <div class="brand-logo">
+      <img src="assets/sound-bars-pulse-white.svg" class="brand-logo">
+      <span class="pl-2">amplify</span>
+    </div>
   </a>
-  <button class="navbar-toggler toggler-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" [ngClass]="{'toggler-btn' : buttonColor, 'toggler-btn-dark': !buttonColor}" type="button" (click)="onChangeButtonColor()" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"  aria-label="Toggle navigation">
     <span class="fa fa-bars"></span>
   </button>
 
@@ -17,6 +19,18 @@
       </li>
       <li class="nav-item active">
         <a class="nav-link gj-navbar-items" href="/signup">Sign up</a>
+      </li>
+      <li class="nav-item active">
+      <a class="nav-link gj-navbar-items" href="#">test1</a>
+      </li>
+      <li class="nav-item active">
+      <a class="nav-link gj-navbar-items" href="#">test2</a>
+      </li>
+      <li class="nav-item active">
+      <a class="nav-link gj-navbar-items" href="#">test3</a>
+      </li>
+      <li class="nav-item active">
+      <a class="nav-link gj-navbar-items" href="#">test4</a>
       </li>
     </ul>
   </div>

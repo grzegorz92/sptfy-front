@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  buttonColor: boolean = true;
+
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onChangeButtonColor(){
+    this.buttonColor = !this.buttonColor;
   }
 
 }
