@@ -1,6 +1,7 @@
 .gj-navbar{
   /*background-color: rgba(73, 80, 87, 0.65);*/
   background-color: rgba(255, 255, 255, 0.2);
+
 }
 
 .gj-navbar-brand, .gj-navbar-items{
@@ -35,7 +36,7 @@
 /*.toggler-btn:hover*/
 {
   /*color: rgb(182, 94, 113);    pink */
-  color: rgb(54, 61, 68);
+  color: rgba(54, 61, 68, 1);
 }
 
 .toggler-btn:focus,
@@ -51,7 +52,7 @@
 
 /*Disable hover in toggler button on touch-screen devices // Enable only on non-touch screen*/
 @media (hover: hover) {
-  .toggler-btn:hover { color: rgb(54, 61, 68); }
+  .toggler-btn:hover { color: rgb(68, 0, 32); }
 }
 
 
