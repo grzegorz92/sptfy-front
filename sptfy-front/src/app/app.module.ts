@@ -10,6 +10,8 @@ import { IndexMenuComponent } from './index-menu/index-menu.component';
 import {FormsModule} from "@angular/forms";
 import {RouterModule, Routes} from "@angular/router";
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
+import {RequestsService} from "./requests.service";
+import {HttpClientModule} from "@angular/common/http";
 
 const appRoutes: Routes = [
   {path: '', component: IndexMenuComponent},
@@ -31,9 +33,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
+    HttpClientModule,
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [],
+  providers: [RequestsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

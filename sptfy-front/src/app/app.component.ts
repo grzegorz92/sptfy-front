@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {RegisterComponent} from "./not-authorized/register/register.component";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
+
+ element = "hi";
+
   constructor() {
   }
-
-
 
   ngOnInit() {
 

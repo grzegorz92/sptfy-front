@@ -1,23 +1,71 @@
+.main-container {
+  min-height: 100vh;
+}
+
 .form-container {
-  /*position: absolute;*/
-  /*top: 200px;*/
-  /*left: 200px;*/
-  /*right: 200px;*/
-  /*bottom: 200px;*/
-  /*margin-top: -50px;*/
-  /*margin-left: -100px;*/
-  padding: 40px 40px;
-  background-color: rgba(255, 255, 255, 0.9);
-  border-radius: 5px;
-  /*width: 400px;*/
-  /*min-width: 100px;*/
-  /*margin: 200px;*/
-  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
 .gj-log-logo {
   text-align: center;
-  font-size: 80px;
-  padding-bottom: 40px;
-  color: #495057
+  color: #495057;
+  font-size: 70px;
+  padding-bottom: 20px;
+}
+
+.log-logo-size {
+  width: 100px;
+}
+
+@media (min-width: 0px)  {
+
+  .form-container {
+    padding: 2rem 1rem;
+    border-radius: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .form-container {
+    padding: 2rem;
+    border-radius: 5px;
+  }
+}
+
+.gj-terms-paragraph {
+  font-size: 14px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.flex-parent {
+  display: flex;
+  height: 20px;
+  align-items: center;
+  text-align: center !important;
+  margin-top: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.flex-child-edge {
+  flex-grow: 2;
+  height: 1px;
+  border: 1px rgba(169, 169, 169, 0.25) solid;
+}
+
+.flex-child-text {
+  color: rgba(23, 23, 23, 0.37);
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-basis: auto;
+  flex-grow: 0;
+  margin: 0px 5px 0px 5px;
+}
+
+.icon-offset {
+  position: relative;
+  top: 2px;
+  left: -2px;
 }

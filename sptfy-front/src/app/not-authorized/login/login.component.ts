@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {RequestsService} from "../../requests.service";
 
 @Component({
   selector: 'app-login',
@@ -7,11 +8,24 @@ import {Component, OnInit} from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() {
+  constructor(private requestService: RequestsService) {
   }
 
 
   ngOnInit() {
   }
 
+
+  onGetToken() {
+
+    this.requestService.getToken('username', 'password', 'password')
+      .subscribe(
+        (response) =>{
+          console.log("onGetToken")
+        },
+        (error)=>{},
+        ()=>{}
+      )
   }
+
+}
