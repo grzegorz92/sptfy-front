@@ -1,5 +1,5 @@
 <div class="d-flex flex-column justify-content-center align-items-center main-container">
-  <form class=" form-container shadow " >
+  <form class="form-container shadow" (ngSubmit)="onGetToken()" >
 
     <div class="gj-log-logo">
       <img src="assets/sound-bars-pulse-495057.svg" class="log-logo-size">
@@ -27,17 +27,17 @@
 
     <div class="pb-2 font-weight-bold text-center">Log in with your email address</div>
     <div class="form-group">
-      <input type="text" class="form-control" name="email" placeholder="Email">
+      <input type="text" class="form-control" name="email" placeholder="Email" ngModel>
     </div>
     <div class="form-group">
-      <input type="password" class="form-control" name="password" placeholder="Password">
+      <input type="password" class="form-control" name="password" placeholder="Password" ngModel>
     </div>
     <div class="form-group">
-      <button type="submit" class="btn gj-btn-green">Sign up</button>
+      <button type="submit" class="btn gj-btn-green">Log in</button>
     </div>
 
     <div style="font-size: 14px; text-align: center;">
-      Already have an account? <a href="http://google.com" class="gj-link">Log in</a>.
+      Don't have an account? <a href="/signup" class="gj-link">Sign up</a>.
     </div>
   </form>
 </div>
