@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
 import {RequestsService} from "../../requests.service";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-login',
@@ -7,6 +8,8 @@ import {RequestsService} from "../../requests.service";
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent implements OnInit {
+
+  @ViewChild('f') login: NgForm;
 
   constructor(private requestService: RequestsService) {
   }
@@ -16,15 +19,21 @@ export class LoginComponent implements OnInit {
   }
 
 
-  onGetToken() {
+  // onGetToken(form: HTMLFormElement) { - in html -> <form (ngSubmit)="onGetToken()" #f>
+  onGetToken(form: NgForm) {  //-> in html(ngSubmit)="onGetToken(f)" #f="ngForm"
+
+    console.log(form); //the same
+    console.log(this.login); //the same
 
     this.requestService.getToken('username', 'password', 'password')
       .subscribe(
-        (response) =>{
+        (response) => {
           console.log("onGetToken")
         },
-        (error)=>{},
-        ()=>{}
+        (error) => {
+        },
+        () => {
+        }
       )
   }
 
