@@ -14,10 +14,8 @@ export class LoginComponent implements OnInit {
   constructor(private requestService: RequestsService) {
   }
 
-
   ngOnInit() {
   }
-
 
   // onGetToken(form: HTMLFormElement) { - in html -> <form (ngSubmit)="onGetToken()" #f>
   onGetToken(form: NgForm) {  //-> in html(ngSubmit)="onGetToken(f)" #f="ngForm"
@@ -36,5 +34,4 @@ export class LoginComponent implements OnInit {
         }
       )
   }
-
 }
