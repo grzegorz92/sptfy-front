@@ -12,9 +12,10 @@ import {RouterModule, Routes} from "@angular/router";
 import { NotAuthorizedComponent } from './not-authorized/not-authorized.component';
 import {RequestsService} from "./requests.service";
 import {HttpClientModule} from "@angular/common/http";
+import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
-  {path: '', component: IndexMenuComponent},
+  {path: '', component: WelcomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'signup', component: RegisterComponent}
 ];
@@ -28,7 +29,8 @@ const appRoutes: Routes = [
     WelcomeComponent,
     RegisterComponent,
     IndexMenuComponent,
-    NotAuthorizedComponent
+    NotAuthorizedComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
